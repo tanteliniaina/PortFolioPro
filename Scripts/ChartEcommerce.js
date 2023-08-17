@@ -1,5 +1,5 @@
 window.onload = function() {
-    const ctx = document.getElementById('mySharePointChart');
+    const ctx = document.getElementById('myEcommercetChart');
 
     new Chart(ctx, {
       type: 'bar',
