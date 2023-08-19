@@ -4,18 +4,15 @@
   <title>PortFolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="text/javascript" src="./Scripts/Chart.bundle.min.js"></script> 
-  <script type="text/javascript" src="./Scripts/ChartSharePoint.js"></script>
-  <script type="text/javascript" src="./Scripts/ChartEcommerce.js"></script>
-  <script type="text/javascript" src="./Scripts/ChartM3.js"></script>
-  <script type="text/javascript" src="./Scripts/ChartPManagement.js"></script>
   
- 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+ 
+  <script type="text/javascript" src="./Scripts/Chart.bundle.min.js"></script>
 
-  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.3/dist/chart.umd.min.js"></script>
+  <script  type="text/javascript" src="Scripts/Charts.js"></script>
 </head>
   <style>
   .fakeimg {
@@ -40,11 +37,17 @@
 	color: grey;
   }
   
-/*
+
 .container-fluid{
  padding: 20px;
 }
-*/
+
+canvas {
+	height: 0.5em;
+	width: 0.5em;
+	max-height: 600px;
+	max-width: 600px;
+}
 
   /*BEGIN HANDWRITER*/
   .typewriter h1 {
@@ -72,14 +75,6 @@
 	}
 	/*END HANDWRITER*/
   </style>
-  
-  <script>
-  	var tabl = document.getElementById('SharePointSites');
-	var a = 12; var b = 13; var c = 14;
-	
-	//tabl.innerHTML = "<tr><th scope='row'></th><td>"+a+"</td><td>"+b+"</td><td>"+c+"</td></tr>";
-
-  </script>
   
 </head>
 <body>
@@ -235,24 +230,21 @@
 				</tbody>
 			</table>
 		</div>
-	  <p>J'ai réalisé beaucoup de projet dans mon cursus scolaire ainsi que dans le monde professionnel. Une orientation qui n'est pas anodine, LE MONDE DE L'E-COMMERCE. 
+		
+		<p>J'ai réalisé beaucoup de projet dans mon cursus scolaire ainsi que dans le monde professionnel. Une orientation qui n'est pas anodine, LE MONDE DE L'E-COMMERCE. 
 		Très passionnant et enrichissant, ce domaine d'activité est une des ouvertures dans le futur.</p>
-	  
-	<br/>
-	<h2>Here are my performance :</h2>
-	<!--Charte 1 : SharePoint-->
-	<div class="container">
-		<canvas id="mySharePointChart"></canvas>
-	</div>
+		<br/>
+		<h2>Here are my performance :</h2>
 
+		<!--Charte 1 : SharePoint-->
+		<center>
+			<div class="container">
+				<canvas id="mySharePointChart"></canvas>
+			</div>
+		</center>
+		
 	</div>
 </div>
-
-
-
-
-
-
 
 
 <!--TITRE SECTION 3 : ecommerce -->
@@ -264,14 +256,14 @@
 	<div class="container">
 	  <p>J'ai réalisé beaucoup de projet dans mon cursus scolaire ainsi que dans le monde professionnel. Une orientation qui n'est pas anodine, LE MONDE DE L'E-COMMERCE. 
 		Très passionnant et enrichissant, ce domaine d'activité est une des ouvertures dans le futur.</p>
-	  
-	<br/>
-	<h2>Here are my performance :</h2>
-	<!--Charte 2 : ECommerce-->
-	<div class="container">
-		<canvas id="myEcommercetChart"></canvas>
-	</div>
-
+		<br/>
+		<h2>Here are my performance :</h2>
+		<!--Charte 2 : ECommerce-->
+		<center>
+			<div class="container">
+				<canvas id="myEcommercetChart"></canvas>
+			</div>
+		</center>
 	</div>
 </div>
 
@@ -284,14 +276,16 @@
 	<div class="container">
 	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 	  
-<br/>
+		<br/>
 
-<h2>Here are my performance :</h2>
-<!--Charte 3 : M3-->
-<div class="container">
-	<canvas id="myM3Chart"></canvas>
-</div>
-
+		<h2>Here are my performance :</h2>
+		<!--Charte 3 : M3-->
+		<center>
+			<div class="container">
+				<canvas id="myM3Chart"></canvas>
+			</div>
+		</center>
+		
 	</div>
 </div>
 <br/>
@@ -305,14 +299,16 @@
 	<div class="container">
 	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 	  
-<br/>
+		<br/>
 
-<h2>Here are my performance :</h2>
-<!--Charte 4 : SharePoint-->
-<div class="container">
-	<canvas id="myPManagementChart"></canvas>
-</div>
-
+		<h2>Here are my performance :</h2>
+		<!--Charte 4 : SharePoint-->
+		<center>
+			<div class="container">
+				<canvas id="myPManagementChart"></canvas>
+			</div>
+		</center>
+		
 	</div>
 </div>
 
@@ -332,6 +328,9 @@
 <div class="mt-5 p-4 bg-dark text-white text-center">
   <p>Footer</p>
 </div>
+
+
+
 
 </body>
 </html>
